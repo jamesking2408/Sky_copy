@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SkyFinch Copy</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/submit.css">
+
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <img src="img/Ajax-loader.gif" style="width: 100px;
+        height: 150px;" alt="Loading..." />
+    </div>
+
+    <!-- Spinner End -->
+
+
+    <!-- Start chat box Design  -->
+
+    <button title="" class="chatbot-toggler wow fadeInDown" data-wow-delay="2.2s">
+        <span class="material-symbols-outlined">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+
+    <div class="chatbot">
+        <header>
+            <h2 class="text-light">CHATBOT</h2>
+            <span class="material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">🤖</span>
+                <p>Hi <br> I'm SkyFinch👋 <br> If you need any help?<br> Type: 'Help'</p>
+            </li>
+            <li class="chat outgoing">
+
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Type here...." required></textarea>
+            <span id="send-btn" class="material-symbols-outlined">send</span>
+        </div>
+    </div>
+    <!-- End chat box Design  -->
+
+
+
+    <!-- Submit alert box -->
+    <div class="container-sub">
+        <div class="sub-popup" id="pop">
+            <img src="img/404-tick.png" alt="">
+            <h2 class="display-5" style="color: rgb(1, 1, 68);"></h2>
+            <p class="fw-semibold">. </p>
+
+            <button type="button" class="exit fs-5 fw-bolder" onclick="closePopup()">OK<span><img src="img/thumbs.png" alt="thumbs" style="width: 25px; margin-top: -2px;"></span></button>
+        </div>
+    </div>
+    <!-- Submit alert box -->
+
+     <!-- Submit worng alert box -->
+     <div class="container-sub">
+        <div class="sub-popup1" id="pop1">
+            <img src="img/wrong.png" alt="">
+            <h2 class="display-5" style="color: rgb(219, 17, 17);"></h2>
+            <p class="fw-semibold"></p>
+            <button type="button" class="exit1 fs-5 fw-bolder" onclick="closePopup1()">OK<span><img src="img/thumbs.png" alt="thumbs" style="width: 25px; margin-top: -2px;"></span></button>
+        </div>
+    </div>
+    <!-- Submit worng alert box -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top m-0 p-0 wow fadeIn" data-wow-delay="0.8s">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn bg-white" data-wow-delay="0.9s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="display-6 text-primary m-0">SkyFinch</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-5" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Solutions</a>
+                        <div class="dropdown-menu border-light m-0">
+                            <div class="submenu w-100">
+                                <button class="dropbtn1 w-100">Application &nbsp;&nbsp; <span
+                                        class="arrow">➯</span></button>
+                                <div class="dropdown-content1 px-2 py-2">
+                                    <a href="#">POS</a>
+                                    <a href="#">Hotel management system</a>
+                                    <a href="#">Restaurant management system</a>
+                                    <a href="#">Smart-Skyfinch</a>
+                                    <a href="#">Visitor management system</a>
+                                </div>
+                            </div>
+                            <div class="submenu w-100">
+                                <button class="dropbtn1 w-100">Web
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
+                                        class="arrow">➯</span></button>
+                                <div class="dropdown-content1 px-2 py-2">
+                                    <a href="#">CRM</a>
+                                    <a href="#">Corporate Travel Management</a>
+                                    <a href="#">Fleet management system</a>
+                                    <a href="#">Event management system</a>
+                                    <a href="#">PayRoll</a>
+                                    <a href="#">Sales and Service</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+
+                <div class=" d-lg-flex ms-2">
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3"
+                        href="https://www.facebook.com/skyfinch.roadmap" target="_blank">
+                        <i class="fab fa-facebook-f text-primary"></i>
+                    </a>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://twitter.com/Roadmaperp"
+                        target="_blank">
+                        <i class="fab fa-twitter text-primary"></i>
+                    </a>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3"
+                        href="https://www.linkedin.com/company/skyfinchroadmap" target="_blank">
+                        <i class="fab fa-linkedin-in text-primary"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Navbar End -->
+
+    <div class="viewport">
+        <div class="container1">
+            <!-- Carousel Start -->
+            <div class="container-fluid pt-5 scroll wow fadeIn" data-wow-delay="1.8s">
+                <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="container3">
+                        <div class="row wow fadeInDown" data-wow-delay="1.9s" id="forms">
+                            <button class="btn shadow fw-bold btn-light btn-lg-square rounded-circle" id="show_form"><img src="img/cont.png" alt="contactMe"></button>
+                        </div>
+
+                        <!-- The form -->
+
+                        <div class="container d-flex justify-content-center align-items-center form-popup">
+                            <div class="container main shadow py-4 g-5" id="myForm">
+
+                                <form name="open_form" action="">
+                                    <div class="row g-2 ">
+                                        <p class="d-flex justify-content-center text-primary display-4 fw-bold">Contact Me!</p>
+                                    </div>
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-lg-12 g-2">
+                                            <label class="form-label" for="email"><b>Email <span id="important">*</span>
+                                                </b></label>
+                                            <input class="form-control" id="form-mail" type="text"
+                                                placeholder="Enter Email" name="email" required>
+                                        </div>
+
+                                        <div class="col g-2">
+                                            <label class="form-label" for="psw"><b>phone Number <span
+                                                        id="important">*</span></b></label>
+                                             <input class="form-control" id="form-number" type="text"
+                                                placeholder="Enter Phone Number" name="phone" required>
+                                        </div>
+
+                                        <div class="row g-3 ">
+                                            <div class="col d-flex justify-content-end">
+                                                <button type="button" class="btn btn-success"
+                                                    onclick="openPopup()">Submit</button>
+                                            </div>
+                                            <div class="col">
+                                                <button type="button" class="btn btn-danger"
+                                                    id="hide_form">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <script>
+                            document.querySelector("#hide_form").addEventListener("click", function () {
+                                document.querySelector("#myForm").style.display = "none";
+                                document.querySelector("show_form").style.display = "block";
+                            })
+                            document.querySelector("#show_form").addEventListener("click", function () {
+                                document.open_form.reset();
+                                document.querySelector("#myForm").style.display = "block";
+                                document.querySelector("show_form").style.display = "none";
+                            })
+                        </script>
+
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item container2 active">
+                            <img class="w-100" src="img/india/curInd01.jpg" alt="Image">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-start">
+                                        <div class="col-lg-7" style="padding-bottom: 80px; ">
+                                            <p
+                                                class="d-inline-block border shadow border-muted rounded text-primary fw-bold py-1 px-3  animated slideInDown">
+                                                Empowering Businesses</p>
+                                            <h1 class="display-3 mb-2 animated slideInDown">
+                                                Scalable Platforms To Tackle
+                                                All Market Conditions
+                                            </h1>
+                                            <p class="text-dark fw-semi-bold">The futuristic assembly of Skyfinch
+                                                software meets
+                                                real-time market trends and can also take on any future market
+                                                disruption.</p>
+                                            <a href="" class="btn btn-primary py-1 px-3 animated slideInUp">Learn
+                                                More</a>
+                                            <a href="" class="btn btn-primary py-1 px-3 animated slideInUp">Product
+                                                Enquiry</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item container2">
+                            <img class="w-100" src="img/india/ind04.jpg" alt="Image">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-start">
+                                        <div class="col-lg-7" style="padding-bottom: 90px;">
+                                            <p
+                                                class="d-inline-block border shadow border-muted rounded text-primary fw-bold py-1 px-3 animated slideInDown">
+                                                Empowering Businesses</p>
+                                            <h1 class="display-3 mb-1 animated slideInDown">Get Skyfinch & Bridge
+                                                Digital Transformation</h1>
+                                            <p class="text-dark fw-semi-bold">Digitally Transform your business workflow
+                                                with the
+                                                Skyfinch range of technological solutions; and thwart all competition.
+                                            </p>
+                                            <a href="" class="btn btn-primary py-1 px-3 animated slideInDown">Learn
+                                                More</a>
+                                            <a href="" class="btn btn-primary py-1 px-3 animated slideInDown">Product
+                                                Enquiry</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item container2">
+                            <img class="w-100" src="img/india/ind01.jpg" alt="Image">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-between ">
+                                        <div class="col-lg-7" style="padding-bottom: 80px;">
+                                            <p style="background-color: rgba(255, 255, 255, 0.5);"
+                                                class="d-inline-block in-border shadow rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
+                                                Empowering Businesses</p>
+                                            <h1 class="display-3 mb-4 animated slideInDown">Flexiblesss Solutions For
+                                                All Businesses</h1>
+                                            <p class="text-dark fw-semi-bold">Skyfinch’s digital solutions are highly
+                                                flexible and
+                                                can be tailor-made to fit the unique process requirements of any type of
+                                                business.</p>
+                                            <a href="" class="btn btn-primary py-2 px-3 animated slideInDown">Request A
+                                                Free Demo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Carousel End -->
+
+
+            <!--Section 1 start-->
+            <section id="sec1" class="bg-01 pt-2">
+                <div class="container py-5">
+                    <div class="row d-flex justify-content-center align-items-center ">
+                        <div class="col-lg-4 col-12 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="col-12 col-md-6 col-lg-12 gy-2">
+                                    <div class="card p-2 text-center border-0 shadow dump">
+                                        <div class="beat1">
+                                            <i class="bi bi-receipt display-4"></i>
+                                        </div>
+                                        <h4 class="fw-bold pb-1 pt-1">GST Ready Billing</h4>
+                                        <p class="text-muted">All Skyfinch solutions that deal with sales and
+                                            billing/invoicing are assigned built-in features to meet all GST’s
+                                            requirements.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-12 gy-3">
+                                    <div class="card p-2 text-center border-0 shadow dump">
+                                        <div class="beat1">
+                                            <i class="bi bi-award display-4"></i>
+                                        </div>
+                                        <h4 class="fw-bold pb-1 pt-1">Best Practices</h4>
+                                        <p class="text-muted">To name one, Skyfinch employs CASE tools to plan and
+                                            design data model; Application Development; and implementation cycles.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-lg-4 col-md-8 pt-2 mt-2 pb-md-3 text-center wow slideInDown"
+                            data-wow-delay="0.3s">
+                            <h2 class="fw-bold display-6 pb-4 pt-4">Why you should Join Us</h2>
+                            <img src="img/cur03.jpg" alt="" class="img-fluid">
+                            <a href="" class="btn btn-primary py-2 my-3 px-3 animated slideInDown">Learn More</a>
+                        </div>
+                        <div class="col-lg-4 col-12 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="col-12 col-md-6 col-lg-12 gy-3">
+                                    <div class="card p-2 text-center border-0 shadow dump">
+                                        <div class="beat1">
+                                            <i class="bi bi-arrow-repeat display-4"></i>
+                                        </div>
+                                        <h4 class="fw-bold pb-1 pt-1">Routine Maintenance</h4>
+                                        <p class="text-muted">Skyfinch's support team handles on-site and off-site
+                                            modifications, enhancements, and documentation in a hassle-free manner.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-6 col-lg-12 gy-3">
+                                    <div class="card p-2 text-center border-0 shadow dump">
+                                        <div class="beat1">
+                                            <i class="bi bi-clock-history display-4"></i>
+                                        </div>
+                                        <h4 class="fw-bold pb-1 pt-1">Time Savings</h4>
+                                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Nisi vitae maiores provident exercitationem inventore dolor sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Section 1 end-->
+
+
+            <!--Section 2 start-->
+            <section id="sec2" class="bg-02 my-5">
+                <div class="container mt-3 pb-4 mb-3">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-lg-6 pb-md-1 pt-5 mt-5 wow fadeInLeft" data-wow-delay="0.4s">
+                            <h2 class="fw-bold display-5 mt-4 pt-5">The Skyfinch Team</h2>
+                            <h5 class="fw-bold pb-2 pt-2">Highly Qualified and Experienced</h5>
+                            <p class="text-muted">Skyfinch’s Applications Development team is technically sound in the
+                                latest version technological platforms and tools. Our technical team has profound
+                                expertise to develop the Apps in Android, and Apple's iOS platforms using
+                                the latest development tools.</p>
+                            <p class="text-muted">Loaded with such technical finesse Skyfinch’s expert Application
+                                development professionals have repeatedly and successfully brought onto the screen of
+                                any desired device, all the workflow requirements pictured by our clients
+                                for their business processes.</p>
+                        </div>
+                        <div class="col-lg-6 text-center mt-5 pt-5 wow fadeInRight" data-wow-delay="0.4s">
+                            <img src="img/india/aboutus1.jpg" alt="" class="img-fluid rounded mt-5" width="450">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="" class="bg-01 pt-2 mt-3 pb-2 mb-3">
+                <div class="container">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-lg-4 pt-5 mt-3 wow fadeInDown" data-wow-delay="0.3s">
+                            <img src="img/india/ind01.jpg" alt="" class="img-fluid rounded d-none d-lg-flex" width="400"
+                                height="600">
+                        </div>
+                        <div class="col-lg-8 py-5">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="col-lg-6 col-md-6 pt-3 mt-5 gy-2 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="card p-1 border-0 bg-pink py-1">
+                                        <div
+                                            class="row d-flex align-items-center justify-content-center text-primary team1">
+                                            <div class="col-3">
+                                                <div class="heart1">
+                                                    <i class="bi bi-arrow-down-up display-6"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-9 ps-md-4">
+                                                <h5 class="fw-bold pb-1 pt-1">Online Application</h5>
+                                                <p class="text-muted">We develop business-specific Online Applications
+                                                    to empower business stakeholders to make business transactions from
+                                                    anywhere at any time.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 pt-3 mt-5 gy-3 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="card p-1 border-0 bg-pink py-1">
+                                        <div
+                                            class="row d-flex align-items-center justify-content-center text-primary team1">
+                                            <div class="col-3">
+                                                <div class="heart1">
+                                                    <i class="bi bi-wifi-off display-6"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-9 ps-md-2">
+                                                <h5 class="fw-bold pb-1">Offline Application</h5>
+                                                <p class="text-muted">Skyfinch’s Offline Applications are state of the
+                                                    art solutions built to digitally integrate and selectively automate
+                                                    the workflow of any type of trade.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 pt-3 mt-5 gy-3 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="card p-1 border-0 bg-pink py-1">
+                                        <div
+                                            class="row d-flex align-items-center justify-content-center text-primary team1">
+                                            <div class="col-3">
+                                                <div class="heart1">
+                                                    <i class="bi bi-phone-flip display-6"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-9 ps-md-4">
+                                                <h5 class="fw-bold pb-1 pt-1">Mobile Application</h5>
+                                                <p class="text-muted">Our expertise in improvising with technology is
+                                                    the ultimate solution to modernize and extend the reach out of
+                                                    businesses through Mobile Apps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 pt-3 mt-5 gy-3 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="card p-1 border-0 bg-pink py-1">
+                                        <div
+                                            class="row d-flex align-items-center justify-content-center text-primary team1">
+                                            <div class="col-3">
+                                                <div class="heart1">
+                                                    <i class="bi bi-database-down display-6"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-9 ps-md-4">
+                                                <h5 class="fw-bold py-1">Database Management</h5>
+                                                <p class="text-muted">We are technically sound to efficiently handle
+                                                    Data migration, Data Integration, and Database Administration
+                                                    activities for all business purposes.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Section 2 end-->
+
+            <!--Section 2 start-->
+            <section id="sec2" class="bg-02 mt-1">
+                <div class="container">
+                    <div class="row d-flex justify-content-center align-items-center pt-2 mt-1 mb-3">
+                        <div class="col-lg-6 pb-md-1 wow fadeInLeft" data-wow-delay="0.4s">
+                            <h2 class="fw-bold display-5 pb-2 pt-4">The Skyfinch Team</h2>
+                            <h5 class="fw-bold pb-2 pt-1">Highly Qualified and Experienced</h5>
+                            <p class="text-muted">Skyfinch’s Applications Development team is technically sound in the
+                                latest version technological platforms and tools. Our technical team has profound
+                                expertise to develop the Apps in Android, and Apple's iOS platforms using
+                                the latest development tools.</p>
+                            <p class="text-muted">Loaded with such technical finesse Skyfinch’s expert Application
+                                development professionals have repeatedly and successfully brought onto the screen of
+                                any desired device, all the workflow requirements pictured by our clients
+                                for their business processes.</p>
+                            <a href="" class="btn btn-primary py-2 px-3 animated slideInDown">Learn More</a>
+                        </div>
+                        <div class="col-lg-6 pt-2 mt-5 pb-1 mb-3">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="0.6s">
+                                    <div class="card text-center border-0 team">
+                                        <div class="heart align-self-center">
+                                            <i class="bi bi-arrow-down-up display-5 text-primary"></i>
+                                        </div>
+                                        <h5 class="fw-bold pb-1">Online Application</h5>
+                                        <p class="text-muted">We develop business-specific Online Applications to
+                                            empower business stakeholders to make business transactions from anywhere at
+                                            any time.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="0.3s">
+                                    <div class="card text-center border-0 team">
+                                        <div class="heart align-self-center">
+                                            <i class="bi bi-wifi-off display-5 text-primary"></i>
+                                        </div>
+                                        <h5 class="fw-bold pb-1">Offline Application</h5>
+                                        <p class="text-muted">Skyfinch’s Offline Applications are state of the art
+                                            solutions built to digitally integrate and selectively automate the workflow
+                                            of any type of trade.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 gy-2 wow fadeInRight" data-wow-delay="0.6s">
+                                    <div class="card text-center border-0 team">
+                                        <div class="heart align-self-center">
+                                            <i class="bi bi-phone-flip display-5 text-primary"></i>
+                                        </div>
+                                        <h5 class="fw-bold pb-1">Mobile Application</h5>
+                                        <p class="text-muted p-0">Our expertise in improvising with technology is the
+                                            ultimate solution to modernize and extend the reach out of businesses
+                                            through Mobile Apps.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 gy-2 wow fadeInRight" data-wow-delay="0.3s">
+                                    <div class="card text-center border-0 team">
+                                        <div class="heart align-self-center">
+                                            <i class="bi bi-database-down display-5 text-primary"></i>
+                                        </div>
+                                        <h5 class="fw-bold pb-1">Database Management</h5>
+                                        <p class="text-muted">We are technically sound to efficiently handle Data
+                                            migration, Data Integration, and Database Administration activities for all
+                                            business purposes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Section 2 end-->
+
+
+            <!--Section 3 start-->
+            <section id="sec3" class="bg-05 pt-5 mt-4">
+                <div class="container pt-2">
+                    <div class="row d-flex justify-content-center align-items-center mt-2">
+                        <div class="col-12">
+                            <h2 class="fw-bold display-4 pb-3 text-center wow fadeInDown" data-wow-delay="0.3s">Skyfinch
+                                Highlights</h2>
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.2s">
+                                    <div class="flower card p-2 text-center border-0">
+                                        <div class="decor d-flex justify-content-center align-items-center">
+                                            <div class="beat">
+                                                <i class="bi bi-bounding-box display-5"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="fw-semibold py-2">Fits All Business Sizes</h4>
+                                        <p class="text-muted">Skyfinch offers Inclusive solutions like Hotel Management
+                                            System as well as dedicated solutions like Restaurant Management System.</p>
+                                        <div
+                                            class="vr vr-blurry position-absolute my-4 h-75 d-none d-md-block top-0 end-0">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s">
+                                    <div class="flower card p-2 text-center border-0">
+                                        <div class="decor d-flex justify-content-center align-items-center">
+                                            <div class="beat">
+                                                <i class="bi bi-bar-chart display-5"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="fw-semibold py-2">Scalability Unlimited</h4>
+                                        <p class="text-muted">The use of up-to-date software and impeccable onsite and
+                                            offsite support ensures the all-time relevance of Skyfinch solutions.</p>
+                                        <div
+                                            class="vr vr-blurry position-absolute my-4 h-75 d-none d-lg-block top-0 end-0">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="d-none d-md-block d-lg-none">
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.2s">
+                                    <div class="flower card p-2 text-center border-0">
+                                        <div class="decor d-flex justify-content-center align-items-center">
+
+                                            <div class="beat">
+                                                <i class="bi bi-nut display-5"></i>
+                                            </div>
+
+                                        </div>
+                                        <h4 class="fw-semibold py-2">Versatile Solutions</h4>
+                                        <p class="text-muted">Skyfinch’s flexible software can be easily customized to
+                                            match all types of businesses and their unique process requirements.</p>
+                                        <div
+                                            class="vr vr-blurry position-absolute my-4 h-75 d-none d-md-block d-lg-none top-0 end-0">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <hr class="d-none d-lg-block">
+
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s">
+                                    <div class="flower card p-2 text-center border-0">
+                                        <div class="decor d-flex justify-content-center align-items-center">
+
+                                            <div class="beat">
+                                                <i class="bi bi-hand-thumbs-up display-5"></i>
+                                            </div>
+
+                                        </div>
+                                        <h4 class="fw-semibold py-2">International Standards</h4>
+                                        <p class="text-muted">Skyfinch caters to business needs even across geographical
+                                            borders; a profound example being its Yard Management System.</p>
+                                        <div
+                                            class="vr vr-blurry position-absolute my-4 h-75 d-none d-lg-block top-0 end-0">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="d-none d-md-block d-lg-none">
+
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.6s">
+                                    <div class="flower card p-2 text-center border-0">
+                                        <div class="decor d-flex justify-content-center align-items-center">
+
+                                            <div class="beat">
+                                                <i class="bi bi-bookmark-star display-5"></i>
+                                            </div>
+
+                                        </div>
+                                        <h4 class="fw-semibold py-2">Best Solution For Events</h4>
+                                        <p class="text-muted">Skyfinch’s Event Management System sequentially
+                                            streamlines event management workflows and renders it free of all stress.
+                                        </p>
+                                        <div
+                                            class="vr vr-blurry position-absolute my-4 h-75 d-none d-md-block top-0 end-0">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s">
+                                    <div class="flower card p-2 text-center border-0">
+                                        <div class="decor d-flex justify-content-center align-items-center">
+
+                                            <div class="beat">
+                                                <i class="bi bi-clipboard-pulse display-5"></i>
+                                            </div>
+
+                                        </div>
+                                        <h4 class="fw-semibold py-2">The Point Of Sale Module</h4>
+                                        <p class="text-muted">Skyfinch’s Point of Sale module is a state of the art
+                                            solution for all businesses whenever and wherever there is a sales activity.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Section 3 end-->
+
+
+            <!--Section 3 start-->
+            <section id="sec3" class="bg-05 pt-5 mt-5">
+                <div class="container py-1">
+                    <div class="row d-flex justify-content-center align-items-center my-2">
+                        <div class="col-12">
+                            <h2 class="fw-bold display-4 pb-2 text-center wow fadeInDown" data-wow-delay="0.3s">Skyfinch
+                                Highlights</h2>
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4"
+                                    data-wow-delay="0.2s">
+                                    <div class="card border-0 pill-bg rounded-pill">
+                                        <div class="row d-flex align-items-center justify-content-center py-1">
+                                            <div class="decor col-lg-2 col-md-6 col-sm-6 py-md-3 py-3 py-lg-0">
+                                                <div class="beat-second">
+                                                    <i class="bi bi-bounding-box h1"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-10 col-md-10 col-sm-12 ps-lg-4">
+                                                <h4 class="fw-bold pb-1 pt-1">Fits All Business Sizes</h4>
+                                                <p class="text-muted">Skyfinch offers Inclusive solutions like Hotel
+                                                    Management System as well as dedicated solutions like Restaurant
+                                                    Management System.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4"
+                                    data-wow-delay="0.4s">
+                                    <div class="card border-0 pill-bg1 rounded-pill">
+                                        <div class="row d-flex align-items-center justify-content-center py-md-1">
+                                            <div class="decor col-lg-2 col-md-6 col-sm-6 py-md-3 py-3 py-lg-0">
+                                                <div class="beat-second">
+                                                    <i class="bi bi-bar-chart h1"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-10 col-md-10 col-sm-12 ps-lg-4">
+                                                <h4 class="fw-bold pb-1 pt-1">Scalability Unlimited</h4>
+                                                <p class="text-muted">The use of up-to-date software and impeccable
+                                                    onsite and offsite support ensures the all-time relevance of
+                                                    Skyfinch solutions.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4"
+                                    data-wow-delay="0.2s">
+                                    <div class="card border-0 pill-bg1 rounded-pill">
+                                        <div class="row d-flex align-items-center justify-content-center py-md-1">
+                                            <div class="decor col-lg-2 col-md-6 col-sm-6 py-md-3 py-3 py-lg-0">
+                                                <div class="beat-second">
+                                                    <i class="bi bi-nut h1"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-10 col-md-10 col-sm-12 ps-lg-4">
+                                                <h4 class="fw-bold pb-1 pt-1">Versatile Solutions</h4>
+                                                <p class="text-muted">Skyfinch’s flexible software can be easily
+                                                    customized to match all types of businesses and their unique process
+                                                    requirements.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4"
+                                    data-wow-delay="0.4s">
+                                    <div class="card border-0 pill-bg rounded-pill">
+                                        <div class="row d-flex align-items-center justify-content-center py-md-1">
+                                            <div class="decor col-lg-2 col-md-6 col-sm-6 py-md-3 py-3 py-lg-0">
+                                                <div class="beat-second">
+                                                    <i class="bi bi-hand-thumbs-up h1"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-10 col-md-10 col-sm-12 ps-lg-4">
+                                                <h4 class="fw-bold pb-1 pt-1">International Standards</h4>
+                                                <p class="text-muted">Skyfinch caters to business needs even across
+                                                    geographical borders; a profound example being its Yard Management
+                                                    System.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4"
+                                    data-wow-delay="0.2s">
+                                    <div class="card border-0 pill-bg rounded-pill">
+                                        <div class="row d-flex align-items-center justify-content-center py-md-1">
+                                            <div class="decor col-lg-2 col-md-6 col-sm-6 py-md-3 py-3 py-lg-0">
+                                                <div class="beat-second">
+                                                    <i class="bi bi-bookmark-star h1"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-10 col-md-10 col-sm-12 ps-lg-4">
+                                                <h4 class="fw-bold pb-1 pt-1">Best Solution For Events</h4>
+                                                <p class="text-muted">Skyfinch’s Event Management System
+                                                    sequentially<br>
+                                                    streamlines event management workflows and renders it free of all
+                                                    stress.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4"
+                                    data-wow-delay="0.4s">
+                                    <div class="card border-0 pill-bg1 rounded-pill">
+                                        <div class="row d-flex align-items-center justify-content-center py-md-1">
+                                            <div class="decor col-lg-2 col-md-6 col-sm-6 py-md-3 py-3 py-lg-0">
+                                                <div class="beat-second">
+                                                    <i class="bi bi-clipboard-pulse h1"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-10 col-md-10 col-sm-12 ps-lg-4">
+                                                <h4 class="fw-bold pb-1 pt-1">The Point Of Sale Module</h4>
+                                                <p class="text-muted">Skyfinch’s Point of Sale module is a state of the
+                                                    art solution for all businesses whenever and wherever there is a
+                                                    sales activity.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Section 3 end-->
+
+
+            <!--Section 4 start-->
+            <section id="sec4" class="bg-04 pt-5 pb-1 mt-5">
+                <div class="container pt-1">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-lg-12 pb-0">
+                            <div class="row d-flex pt-2 align-items-center justify-content-center ">
+                                <div class="col-lg-3 col-md-5 col-6 text-center gy-2 pt-1 pb-4 wow fadeIn"
+                                    data-wow-delay="0.2s">
+                                    <div class="card border-0 bg-transparent text-center pop1">
+                                        <div class="">
+                                            <i class="bi bi-terminal-fill display-3 text-muted"></i>
+                                        </div>
+                                        <div class="p-2">
+                                            <h3 class="fw-bold pt-1 text-muted"><span
+                                                    class="count display-3 text-light fw-bold">20</span>+ <br> Products
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-5 col-6 text-center pt-1 pb-4 gy-2 wow fadeIn"
+                                    data-wow-delay="0.3s">
+                                    <div class="card border-0 bg-transparent text-center pop1">
+                                        <div class="">
+                                            <i class="bi bi-file-earmark-easel-fill display-3 text-muted"></i>
+                                        </div>
+                                        <div class="p-2">
+                                            <h3 class="fw-bold pt-1 text-muted"><span
+                                                    class="count display-3 text-light fw-bold">20</span>+ <br> Projects
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-5 col-6 text-center pt-1 pb-4 gy-2 wow fadeIn"
+                                    data-wow-delay="0.5s">
+                                    <div class="card border-0 bg-transparent text-center pop1">
+                                        <div class="">
+                                            <i class="bi bi-people-fill display-3 text-muted"></i>
+                                        </div>
+                                        <div class="p-2">
+                                            <h3 class="fw-bold pt-1 text-muted"><span
+                                                    class="count display-3 text-light fw-bold">200</span>+ <br>
+                                                Customers</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-5 col-6 text-center pt-1 pb-4 gy-2 wow fadeIn"
+                                    data-wow-delay="0.7s">
+                                    <div class="card border-0 bg-transparent text-center pop1">
+                                        <div class="">
+                                            <i class="bi bi-buildings-fill display-3 text-muted"></i>
+                                        </div>
+                                        <div class="p-2">
+                                            <h3 class="fw-bold pt-1 text-muted"><span
+                                                    class="count display-3 text-light fw-bold">10</span> <br>
+                                                Global&nbsp;Offices</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 mb-2">
+                            <h2 class="fw-bold display-5 mt-0 pt-0 text-center">Why Choose Us</h2>
+                        </div>
+
+                        <div class="col-lg-12 pb-1">
+                            <div class="row d-flex align-items-center justify-content-around">
+
+                                <div class="col-lg-3 col-md-5 text-center mx-1 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="card overflow-hidden border-0 shadow pop2">
+                                        <div class="icon-back py-1">
+                                            <i class="fa-sharp fa-solid fa-gear text-secondary fa-4x"></i>
+                                        </div>
+                                        <div class="p-1">
+                                            <h4 class="fw-semi-bold">Best Fit Solutions</h4>
+                                            <p class="text-muted">We understand the unique challenge of each business,
+                                                and accordingly, provide the best-fit solution to each client.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-5 text-center mx-1 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="card overflow-hidden border-0 shadow pop2">
+                                        <div class="icon-back py-1">
+                                            <i class="fa-solid fa-headset text-secondary fa-4x"></i>
+                                        </div>
+                                        <div class="p-1">
+                                            <h4 class="fw-semi-bold">Customer Support</h4>
+                                            <p class="text-muted">We go beyond the normal and develop an ‘Association’
+                                                with our clients to ensure that they are all set in the path of growth.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-5 text-center mx-1 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="card overflow-hidden border-0 shadow pop2">
+                                        <div class="icon-back py-1">
+                                            <i class="fa-sharp fa-solid fa-money-check-dollar text-secondary fa-4x"></i>
+                                        </div>
+                                        <div class="p-1">
+                                            <h4 class="fw-semi-bold">Proven Credibility</h4>
+                                            <p class="text-muted">We adopt proven practices right from the beginning
+                                                till the final handover and strive to increase our customers’ business
+                                                productivity.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!--Section 4 end-->
+
+
+
+            <!--Section 5 start-->
+            <section id="sec5" class="bg-09 mt-5 pb-2">
+                <div class="container pt-2 mt-4">
+
+                    <div class="row d-flex justify-content-center align-items-center py-3">
+
+                        <h2 class="fw-bold display-5 mt-4 pt-4 pb-2  text-center">The MR Reporting software is an online
+                        </h2>
+
+                        <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.4s">
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <div class="col">
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
+                                        <div class="col tooltip-content">
+                                            <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Fugit fuga perferendis eveniet doloribus?</p>
+                                            <div>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
+                                                    it</button>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        class="text-white">Call us</a></button>
+                                            </div>
+                                            <span class="mark"></span>
+                                        </div>
+                                        <div class="card text-center dump1 cr-bk">
+                                            <div class="card-body">
+                                                <i class="bi bi-x-diamond text-primary"></i>
+                                                <h5 class="card-title fw-bold">Materials</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col">
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
+                                        <div class="col tooltip-content">
+                                            <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Fugit fuga perferendis eveniet doloribus?</p>
+                                            <div>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
+                                                    it</button>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        class="text-white">Call us</a></button>
+                                            </div>
+                                            <span class="mark"></span>
+                                        </div>
+                                        <div class="card text-center dump1 cr-bk">
+                                            <div class="card-body">
+                                                <i class="bi bi-window-stack text-primary"></i>
+                                                <h5 class="card-title fw-bold">Tractability</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
+                                        <div class="col tooltip-content">
+                                            <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Fugit fuga perferendis eveniet doloribus?</p>
+                                            <div>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
+                                                    it</button>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        class="text-white">Call us</a></button>
+                                            </div>
+                                            <span class="mark"></span>
+                                        </div>
+                                        <div class="card text-center dump1 cr-bk">
+                                            <div class="card-body">
+                                                <i class="bi bi-view-list text-primary"></i>
+                                                <h5 class="card-title fw-bold">Bin</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <div class="col">
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
+                                        <div class="col tooltip-content">
+                                            <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Fugit fuga perferendis eveniet doloribus?</p>
+                                            <div>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
+                                                    it</button>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        class="text-white">Call us</a></button>
+                                            </div>
+                                            <span class="mark"></span>
+                                        </div>
+                                        <div class="card text-center dump1 cr-bk">
+                                            <div class="card-body">
+                                                <i class="bi bi-ubuntu text-primary"></i>
+                                                <h5 class="card-title fw-bold">Inventory</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
+                                        <div class="col tooltip-content">
+                                            <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Fugit fuga perferendis eveniet doloribus?</p>
+                                            <div>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
+                                                    it</button>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        class="text-white">Call us</a></button>
+                                            </div>
+                                            <span class="mark"></span>
+                                        </div>
+                                        <div class="card text-center dump1 cr-bk">
+                                            <div class="card-body">
+                                                <i class="bi bi-tv text-primary"></i>
+                                                <h5 class="card-title fw-bold">Warehouse</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
+                                        <div class="col tooltip-content">
+                                            <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Fugit fuga perferendis eveniet doloribus?</p>
+                                            <div>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
+                                                    it</button>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        class="text-white">Call us</a></button>
+                                            </div>
+                                            <span class="mark"></span>
+                                        </div>
+                                        <div class="card text-center dump1 cr-bk">
+                                            <div class="card-body">
+                                                <i class="bi bi-text-paragraph text-primary"></i>
+                                                <h5 class="card-title fw-bold">Distribution</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col">
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
+                                        <div class="col tooltip-content">
+                                            <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Fugit fuga perferendis eveniet doloribus?</p>
+                                            <div>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
+                                                    it</button>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        class="text-white">Call us</a></button>
+                                            </div>
+                                            <span class="mark"></span>
+                                        </div>
+                                        <div class="card text-center dump1 cr-bk">
+                                            <div class="card-body">
+                                                <i class="bi bi-tags text-primary"></i>
+                                                <h5 class="card-title fw-bold">Bill</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
+                                        <div class="col tooltip-content">
+                                            <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Fugit fuga perferendis eveniet doloribus?</p>
+                                            <div>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
+                                                    it</button>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        class="text-white">Call us</a></button>
+                                            </div>
+                                            <span class="mark"></span>
+                                        </div>
+                                        <div class="card text-center dump1 cr-bk">
+                                            <div class="card-body">
+                                                <i class="bi bi-stickies text-primary"></i>
+                                                <h5 class="card-title fw-bold">Quality</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
+                                        <div class="col tooltip-content">
+                                            <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Fugit fuga perferendis eveniet doloribus?</p>
+                                            <div>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
+                                                    it</button>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        class="text-white">Call us</a></button>
+                                            </div>
+                                            <span class="mark"></span>
+                                        </div>
+                                        <div class="card text-center dump1 cr-bk">
+                                            <div class="card-body">
+                                                <i class="bi bi-soundwave text-primary"></i>
+                                                <h5 class="card-title fw-bold">Life-Cycle</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 wow fadeInRight" data-wow-delay="0.4s">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="col">
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
+                                        <div class="col tooltip-content">
+                                            <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Fugit fuga perferendis eveniet doloribus?</p>
+                                            <div>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
+                                                    it</button>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        class="text-white">Call us</a></button>
+                                            </div>
+                                            <span class="mark"></span>
+                                        </div>
+                                        <div class="card text-center dump1 cr-bk">
+                                            <div class="card-body">
+                                                <i class="bi bi-motherboard text-primary"></i>
+                                                <h5 class="card-title fw-bold">Hardware</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
+                                        <div class="col tooltip-content">
+                                            <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Fugit fuga perferendis eveniet doloribus?</p>
+                                            <div>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
+                                                    it</button>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        class="text-white">Call us</a></button>
+                                            </div>
+                                            <span class="mark"></span>
+                                        </div>
+                                        <div class="card text-center dump1 cr-bk">
+                                            <div class="card-body">
+                                                <i class="bi bi-snow text-primary"></i>
+                                                <h5 class="card-title fw-bold">Data Loss</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col">
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
+                                        <div class="col tooltip-content">
+                                            <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Fugit fuga perferendis eveniet doloribus?</p>
+                                            <div>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
+                                                    it</button>
+                                                <button id="spl1"
+                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        class="text-white">Call us</a></button>
+                                            </div>
+                                            <span class="mark"></span>
+                                        </div>
+                                        <div class="card text-center dump1 cr-bk">
+                                            <div class="card-body">
+                                                <i class="bi bi-slack text-primary"></i>
+                                                <h5 class="card-title fw-bold">Accounting</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Section 5 end-->
+
+
+
+
+            <!--Section 6 start-->
+            <section id="sec6" class="py-3 mt-4">
+                <div class="container pt-3">
+                    <div class="row d-flex justify-content-center align-items-center my-3">
+
+                        <div class="sec col-12 col-sm-12 col-md-10 col-lg-10 text-center mb-3 wow fadeInDown"
+                            data-wow-delay="0.3s">
+                            <h2 class="fw-bold display-5 pb-4 text-center">SkyFinch Makes Your Business Proud</h2>
+                            <a type="button" class="my-1 btn-sm fw-bold btn btn-silver me-1 rounded-pill active1"
+                                data-filter="show1">Windows&nbsp;Application</a>
+                            <a type="button" class="my-1 btn-sm fw-bold btn btn-silver mx-1 rounded-pill"
+                                data-filter="show2">Web&nbsp;Application</a>
+                            <a type="button" href="#"
+                                class="my-1 btn-sm fw-bold btn btn-silver ms-1 rounded-pill">All&nbsp;Products</a>
+                        </div>
+
+                        <div class="col-lg-12 pt-3 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="row d-flex justify-content-center align-items-center">
+
+                                <!-- show 1 start -->
+                                <div class="col product show1">
+
+                                    <div class="row d-flex justify-content-center align-items-center">
+
+                                        <div class="col-lg-5 animated fadeInLeft">
+                                            <h3 class="fw-bold pb-3 text-center mt-0 mb-1">Windows Application</h3>
+                                            <img src="img/india/web_app.png" alt="img-1"
+                                                style="width: 420px; height: 350px;"
+                                                class="img-fluid d-none d-sm-none d-md-none d-lg-block">
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="row d-flex jus  tify-content-center align-items-center">
+                                                <div class="col-md-6 col-lg-6 col-sm-6 mb-3">
+                                                    <a href="Products.html?number=1">
+                                                        <div class="card text-center border-0 hov1">
+                                                            <div class="card-body">
+                                                                <i class="bi bi-alexa text-danger"></i>
+                                                                <h5 class="card-title fw-bold mb-3">Profitablity
+                                                                    Analysis</h5>
+                                                                <p class="card-text text-muted">“You are not too far
+                                                                    from your business, wherever you are.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-md-6 col-lg-6 col-sm-6 mb-3">
+                                                    <a href="Products.html?number=1">
+                                                        <div class="card text-center border-0 hov1">
+                                                            <div class="card-body">
+                                                                <i class="bi bi-activity text-warning"></i>
+                                                                <h5 class="card-title fw-bold mb-3">Production Vs Sales
+                                                                </h5>
+                                                                <p class="card-text text-muted">“You are not too far
+                                                                    from your business, wherever you are.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-md-6 col-lg-6 col-sm-6 mb-3">
+                                                    <a href="Products.html?number=1">
+                                                        <div class="card text-center border-0 hov1">
+                                                            <div class="card-body">
+                                                                <i class="bi bi-fingerprint text-success"></i>
+                                                                <h5 class="card-title fw-bold mb-3">Production Analyisis
+                                                                </h5>
+                                                                <p class="card-text text-muted">“You are not too far
+                                                                    from your business, wherever you are.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-md-6 col-lg-6 col-sm-6 mb-3">
+                                                    <a href="Products.html?number=1">
+                                                        <div class="card text-center border-0 hov1">
+                                                            <div class="card-body">
+                                                                <i class="bi bi-bounding-box"></i>
+                                                                <h5 class="card-title fw-bold mb-3">Schedule Vs
+                                                                    Despatches</h5>
+                                                                <p class="card-text text-muted">“You are not too far
+                                                                    from your business, wherever you are.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- show 1 end -->
+
+                                <!-- show 2 start -->
+                                <div class="col product show2">
+
+                                    <div class="row d-flex justify-content-center align-items-center">
+
+                                        <div class="col-lg-5 animated fadeInLeft">
+                                            <h3 class="fw-bold pb-3 text-center mt-0 mb-1 py-2">Web Application</h3>
+                                            <img src="img/maintenance1.jpg" alt="img-1"
+                                                class="img-fluid d-none d-sm-none d-md-none mb-2 pb-2 d-lg-block">
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="row d-flex justify-content-center align-items-center">
+                                                <div class="col-md-6 col-lg-6 col-sm-6 mb-3">
+                                                    <a href="Products.html?number=2">
+                                                        <div class="card text-center border-0 hov1">
+                                                            <div class="card-body">
+                                                                <i class="bi bi-alexa text-success"></i>
+                                                                <h5 class="card-title fw-bold mb-3">Visibility</h5>
+                                                                <p class="card-text text-black">“You are not too far
+                                                                    from your business, wherever you are.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6 col-lg-6 col-sm-6 mb-3">
+                                                    <a href="Products.html?number=2">
+                                                        <div class="card text-center border-0 hov1">
+                                                            <div class="card-body">
+                                                                <i class="bi bi-activity text-danger"></i>
+                                                                <h5 class="card-title fw-bold mb-3">Mobile</h5>
+                                                                <p class="card-text text-black">“You are not too far
+                                                                    from your business, wherever you are.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6 col-lg-6 col-sm-6 mb-3">
+                                                    <a href="Products.html?number=2">
+                                                        <div class="card text-center border-0 hov1">
+                                                            <div class="card-body">
+                                                                <i class="bi bi-fingerprint text-info"></i>
+                                                                <h5 class="card-title fw-bold mb-3">Web Approvals</h5>
+                                                                <p class="card-text text-black">“You are not too far
+                                                                    from your business, wherever you are.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6 col-lg-6 col-sm-6 mb-3">
+                                                    <a href="Products.html?number=2">
+                                                        <div class="card text-center border-0 hov1">
+                                                            <div class="card-body">
+                                                                <i class="bi bi-bounding-box text-warning"></i>
+                                                                <h5 class="card-title fw-bold mb-3">Web Approvals</h5>
+                                                                <p class="card-text text-black">“You are not too far
+                                                                    from your business, wherever you are.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- show 2 end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!--Section 6 end-->
+
+
+
+            <!--Section 7 start-->
+            <section id="sec7" class="bg-09 pt-5 pb-3">
+                <div class="container pt-2 mb-5">
+                    <div class="row d-flex justify-content-center align-items-center mt-2 pb-4">
+
+                        <div class="col-lg-12 divide">
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <h2 class="fw-bold pb-2 pb-md-5 pb-lg-1 pt-2 pb-3 text-center display-6 wow fadeInDown"
+                                    data-wow-delay="0.4s">Our Valuable Customers</h2>
+                                <div class="cus owl-carousel owl-theme pt-3">
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/1.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/Ajay Travels.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/annai electronics.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/chemfab.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/clickyp.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/ghcl.png" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/jagan photos.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/kbs.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/ks.png" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/lakshmi jewellery.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/life-cell.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/mbm.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/megna.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/mr and mrs botique.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/ms.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/nds.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/new cars.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/nithin.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/nithya.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/prabu studio.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/rainbow.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/rane.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/S.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/sanguine.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/sanjay environmental.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/sivasakthi.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/st mobiles.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/tedcas.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/Thulasi.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mx-2">
+                                            <img src="img/cus/wordwide cargo.jpg" alt="zC" class="img-fluid">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="row d-flex justify-content-center align-items-center mt-2">
+                                <div class="col-lg-5">
+                                    <h6 class="fw-bold display-6 d-md-1 mb-4">Got A Project Or A&nbsp;Partnership
+                                        In&nbsp;Mind?</h6>
+                                    <div class="row d-flex align-items-center justify-content-center">
+                                        <div class="col-lg-6 col-md-4 col-sm-5 col-auto">
+                                            <div class="card border-0 bg-transparent">
+                                                <div class="card-body p-0">
+                                                    <div class="mb-2">
+                                                        <img src="img/form-logo2.png" alt="" class="logo">
+                                                    </div>
+                                                    <h5 class="card-title">Phone:</h5>
+                                                    <p class="card-text text-muted">+91 9443487210<br> +91 9442571259
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-4 col-sm-5 col-auto">
+                                            <div class="card border-0 bg-transparent">
+                                                <div class="card-body p-0">
+                                                    <div class="mb-2">
+                                                        <img src="img/form-logo1.png" alt="" class="logo">
+                                                    </div>
+                                                    <h5 class="card-title">Email:</h5>
+                                                    <p class="card-text text-muted">info@skyfinch.com<br>
+                                                        mktg@roadmapit.com
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-7 pt-4">
+                                    <form name="cus_form" action="">
+                                        <div class="row">
+                                            <div class="col-lg-6 mt-3 pb-2">
+                                                <div class="input-data">
+                                                    <label for="">Enter Your Name:</label>
+                                                    <input type="text" style="text-transform: uppercase ;" id="cus-name" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 mt-3 pb-2">
+                                                <div class="input-data">
+                                                    <label for="">Your Phone Number:</label>
+                                                    <input type="tel" id="cus-number" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 mt-3 pb-2">
+                                                <div class="input-data">
+                                                    <label for="">Your E-mail:</label>
+                                                    <input type="email" id="cus-mail" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 mt-3 pb-2">
+                                                <div class="input-data">
+                                                    <label for="">Tell About Your Project:</label>
+                                                    <input type="text" id="cus-text" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 mx-auto pt-3">
+                                                <button type="button" class="btn btn-primary text-light"
+                                                    onclick="msgButton()">Send message</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Section 5 end-->
+
+
+
+            <!-- Footer Start -->
+            <div class="container-fluid scroll text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+                <div class="container pt-5">
+                    <div class="row g-5">
+                        <div class="col-lg-4 col-md-6">
+                            <h4 class="text-white mb-4">SkyFinch</h4>
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>5, Republic Street, Reddiarpalayam,
+                                <br>Puducherry-605 010, India
+                            </p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9443487210</p>
+                            <p class="btn-link mb-2"><i class="fa fa-envelope me-3"></i>info@skyfinch.com</p>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                                    href="https://twitter.com/Roadmaperp" target="_blank"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                                    href="https://www.facebook.com/skyfinch.roadmap" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                                    href="https://www.instagram.com/skyfinchroadmap" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                                    href="https://www.linkedin.com/company/skyfinchroadmap" target="_blank"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <h4 class="text-white mb-4 w-50 border-bottom border-primary">Explore</h4>
+                            <a class="btn btn-link" href="index.html">Home</a>
+                            <a class="btn btn-link" href="about.html">About Us</a>
+                            <a class="btn btn-link" href="">Product Enquiry</a>
+                            <a class="btn btn-link" href="service.html">Services</a>
+                            <a class="btn btn-link" href="contact.html">Contact us</a>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <h4 class="text-white mb-4 w-50 border-bottom border-primary">Discover</h4>
+                            <a class="btn btn-link" href="">Plans & Pricing</a>
+                            <a class="btn btn-link" href="">Newsletter</a>
+                            <a class="btn btn-link" href="contact.html">Contact Us</a>
+                            <a class="btn btn-link" href="">Customer&nbsp;Support</a>
+                            <a class="btn btn-link" href="">Enquiry</a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <h4 class="text-white me-5 mb-4 border-bottom border-primary w-25">Newsletter</h4>
+                            <div class="position-relative w-100">
+                                <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text"
+                                    placeholder="Your email">
+                                <button type="button"
+                                    class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mx-5 my-5"></div>
+                <!-- Copyright Start -->
+                <div class="container-fluid copyright py-4">
+                    <div class="container">
+                        <div class="row mt-5 d-flex justify-content-center">
+                            <div class="row mt-5 d-flex justify-content-center">
+                                <div class="col-md-6 text-center text-md-start mt-5 mb-md-0">
+                                    Copyright &copy; Skyfinch 2023. All rights reserved. Designed By Skyfinch.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Copyright End -->
+            </div>
+
+
+            <!-- Footer End -->
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top wow fadeInDown"
+        data-wow-delay="3.5s"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+
+    <!-- Scroll effects -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+    <!-- Scroll effects -->
+
+    <!-- Section Scroll effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
+    <!-- Section Scroll effects -->
+
+    <!-- Smooth scroll -->
+    <script src="js/SmoothScroll.min.js"></script>
+
+    <script src="js/submit.js"></script>
+
+    <!-- Smooth scroll -->
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
